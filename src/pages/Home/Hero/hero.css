@@ -1,6 +1,6 @@
 .hero__header,
 .hero__header__wrapper,
-.hero__header__nav {
+.hero__nav {
     display: flex;
     align-items: center;
 }
@@ -11,9 +11,63 @@
 }
 
 .hero__header__wrapper {
+    gap: 3.5rem;
+}
+
+.hero__nav {
     gap: 3rem;
 }
 
-.hero__header__nav {
-    gap: 2rem;
+.hero__nav__link {
+    outline: 0;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-100);
+    color: var(--clr-neutral-900);
+}
+
+.hero__nav__link:hover,
+.hero__nav__link:focus {
+    color: var(--clr-accent-100);
+}
+
+.hero__home__link:focus,
+.dialog__home__link:focus {
+    outline: 2px solid var(--clr-neutral-900);
+    border-radius: 0.25rem;
+}
+
+.dialog__content {
+    --dialog-content-background-color: var(--clr-transparent-100);
+
+    position: fixed;
+    inset: 0;
+    padding-inline: 2rem;
+    padding-block: 2.5rem;
+    background-color: var(--dialog-content-background-color);
+}
+
+.dialog__content:focus {
+    outline: none;
+}
+
+.dialog__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog__controller {
+    display: flex;
+    align-items: center;
+    border: 0;
+    background: transparent;
+}
+
+.dialog__bookmark__logo .letter--fill,
+.dialog__bookmark__logo .circle--fill {
+    fill: var(--clr-neutral-100);
+}
+
+.dialog__bookmark__logo .mask--fill {
+    fill: var(--dialog-content-background-color);
 }

@@ -1,44 +1,75 @@
-import * as NavigationMenu from '@radix-ui/react-navigation-menu'
-import { ReactComponent as LogoBookmark } from '../../../assets/logos/logo-bookmark.svg'
+import { NavigationMenu } from '../../../components';
+import * as Dialog from '@radix-ui/react-dialog'
+import { ReactComponent as BookmarkLogo } from '../../../assets/logos/bookmark-logo.svg';
+import { ReactComponent as HamburgerMenuIcon } from '../../../assets/icons/hamburguer-menu-icon.svg';
+import { ReactComponent as CrossIcon } from '../../../assets/icons/cross-icon.svg';
+
+import { useWindowSize } from 'usehooks-ts';
 
 import './hero.css'
 
 export const Hero = () => {
+    const { width: viewport } = useWindowSize();
+    const BREAKPOINT = 768;
+    const isMobileViewport = viewport < BREAKPOINT;
+    const isDesktopViewport = viewport >= BREAKPOINT;
+
     return <div> 
             <header className='hero__header'>
-                <a href="/">
-                    <LogoBookmark />
+                <a 
+                    href="/"
+                    className='hero__home__link'
+                >
+                    <BookmarkLogo />
                 </a>
 
                 <div className='hero__header__wrapper'>
-                    <NavigationMenu.Root>
-                        <NavigationMenu.List className='hero__header__nav'>
-                            <NavigationMenu.Item>
-                                <NavigationMenu.Link href='/' >
-                                    Features
-                                </ NavigationMenu.Link>
-                            </ NavigationMenu.Item>
-                            
-                            <NavigationMenu.Item>
-                                <NavigationMenu.Link href='/' >
-                                    Pricing
-                                </ NavigationMenu.Link>
-                            </ NavigationMenu.Item>
-                            
-                            <NavigationMenu.Item>
-                                <NavigationMenu.Link href='/' >
-                                    Contact
-                                </ NavigationMenu.Link>
-                            </ NavigationMenu.Item>
-                        </ NavigationMenu.List>
-                    </ NavigationMenu.Root>
-                    
-                    <a 
-                        href='/'
-                        className='button button--primary--red uppercase' 
-                    >
-                        Login
-                    </a>
+                    {isDesktopViewport &&
+                        <>
+                            <NavigationMenu 
+                                navContainerClass='hero__nav'
+                                navLinkClass='hero__nav__link'
+                            />
+
+                            <a 
+                                href='/'
+                                className='button button--primary--red uppercase tracking-100' 
+                            >
+                                Login
+                            </a>
+                        </>}
+
+                    {isMobileViewport &&
+                        <Dialog.Root>
+                            <Dialog.Trigger asChild>
+                                <button className='dialog__controller' aria-label='Open navigation menu'>
+                                    <HamburgerMenuIcon />
+                                </button>
+                            </ Dialog.Trigger>
+                                
+                            <Dialog.Portal>
+                                <Dialog.Content className='dialog__content'>
+                                    <div className='dialog__wrapper'>
+                                        <a 
+                                            href="/"
+                                            className='dialog__home__link'
+                                        >
+                                            <BookmarkLogo 
+                                                className='dialog__bookmark__logo'
+                                            />
+                                        </a>
+                                        
+                                        <Dialog.Close asChild>
+                                            <button className='dialog__controller'>
+                                                <CrossIcon />
+                                            </button>
+                                        </Dialog.Close>
+                                    </div>
+                                    
+                                    <NavigationMenu />
+                                </ Dialog.Content>
+                             </ Dialog.Portal>
+                        </ Dialog.Root>}
                 </div>
             </header>
 
