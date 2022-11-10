@@ -1,0 +1,19 @@
+.hero__header,
+.hero__header__wrapper,
+.hero__header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.hero__header {
+    justify-content: space-between;
+    padding-block: 2.5rem;
+}
+
+.hero__header__wrapper {
+    gap: 3rem;
+}
+
+.hero__header__nav {
+    gap: 2rem;
+}

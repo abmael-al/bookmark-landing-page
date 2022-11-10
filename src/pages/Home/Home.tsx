@@ -1,25 +1,23 @@
+import { Hero } from "./Hero/Hero"
+
 const Footer = () => {
-    return <h1>Footer</h1>
+    return <h2>Footer</h2>
 }
 
 const EmailCapture = () => {
-    return <h1>EmailCapture</h1>
+    return <h2>EmailCapture</h2>
 }
 
 const FrequentlyAskedQuestions = () => {
-    return <h1>FAQ</h1>
+    return <h2>FAQ</h2>
 }
 
 const CallToAction = () => {
-    return <h1>Call to Action</h1>
+    return <h2>Call to Action</h2>
 }
 
 const Features = () => {
-    return <h1>Features</h1>
-}
-
-const Hero = () => {
-    return <h1>Hero</h1>
+    return <h2>Features</h2>
 }
 
 export const Home = () => {

@@ -1,0 +1,42 @@
+:root {
+    /* colors */
+    --clr-neutral-900: hsl(0, 0%, 0%);
+    --clr-neutral-300: hsl(229, 8%, 60%);
+    --clr-neutral-200: hsl(229, 31%, 21%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    
+    --clr-accent-100: hsl(0, 94%, 66%);
+    --clr-accent-200: hsl(231, 69%, 60%);
+
+    /* typography */
+    --ff-primary-fallback: sans-serif;
+    --ff-primary: 'Rubik', var(--ff-primary-fallback);
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+
+    --fs-300: 1rem;
+    --fs-400: 1.125rem;
+
+    --ff-body: var(--ff-primary);
+    --fs-body: var(--fs-300);
+}
+
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+}
+
+/* UTILITY CLASSES */
+.button {
+    padding-block: 0.5rem;
+    padding-inline: 1.75rem;
+    border-radius: 0.25rem;
+    color: var(--clr-neutral-100);
+}
+
+.button--primary--red {
+    background-color: var(--clr-accent-100);
+}
+
+.uppercase { text-transform: uppercase; }
