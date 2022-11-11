@@ -18,12 +18,12 @@ export const NavigationMenu = ({
     navItemClass,
     navLinkClass 
 }: NavigationMenuProps) => {
-    const itemClass = navItemClass ? navItemClass : '';
-    const linkClass = navLinkClass ? navLinkClass : '';
+    const itemClass = navItemClass || '';
+    const linkClass = navLinkClass || '';
     
     return (
-        <NavRoot className={ navRootClass ? navRootClass : '' }>
-            <NavList className={ navListClass ? navListClass : '' }>
+        <NavRoot className={ navRootClass || '' }>
+            <NavList className={ navListClass || '' }>
                 <NavItem className={itemClass}>
                     <NavLink 
                         href='/' 
