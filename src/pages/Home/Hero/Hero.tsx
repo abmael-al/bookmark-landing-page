@@ -1,6 +1,8 @@
 import { NavigationMenu } from '../../../components';
 import * as Dialog from '@radix-ui/react-dialog'
 import { ReactComponent as BookmarkLogo } from '../../../assets/logos/bookmark-logo.svg';
+import { ReactComponent as FacebookLogo } from '../../../assets/logos/facebook-logo.svg';
+import { ReactComponent as TwitterLogo } from '../../../assets/logos/twitter-logo.svg';
 import { ReactComponent as HamburgerMenuIcon } from '../../../assets/icons/hamburguer-menu-icon.svg';
 import { ReactComponent as CrossIcon } from '../../../assets/icons/cross-icon.svg';
 
@@ -27,7 +29,7 @@ export const Hero = () => {
                     {isDesktopViewport &&
                         <>
                             <NavigationMenu 
-                                navContainerClass='hero__nav'
+                                navListClass='hero__nav__list'
                                 navLinkClass='hero__nav__link'
                             />
 
@@ -47,26 +49,51 @@ export const Hero = () => {
                                 </button>
                             </ Dialog.Trigger>
                                 
-                            <Dialog.Portal>
+                            <Dialog.Portal className='dialog__root'>
                                 <Dialog.Content className='dialog__content'>
                                     <div className='dialog__wrapper'>
                                         <a 
                                             href="/"
                                             className='dialog__home__link'
                                         >
-                                            <BookmarkLogo 
-                                                className='dialog__bookmark__logo'
-                                            />
+                                            <BookmarkLogo className='dialog__bookmark__logo' />
                                         </a>
                                         
                                         <Dialog.Close asChild>
                                             <button className='dialog__controller'>
-                                                <CrossIcon />
+                                                <CrossIcon className='dialog__close__icon' />
                                             </button>
                                         </Dialog.Close>
                                     </div>
                                     
-                                    <NavigationMenu />
+                                    <NavigationMenu 
+                                        navRootClass='mobile__nav__root'
+                                        navListClass='mobile__nav__list'
+                                        navItemClass='mobile__nav__item'
+                                        navLinkClass='mobile__nav__link'
+                                    />
+
+                                    <div className='dialog__links__wrapper'>
+                                        <a 
+                                            href='/'
+                                            className='button button--terciary' 
+                                        >
+                                            Login
+                                        </a>
+
+                                        <div className='dialog__social__links'>
+                                            <a href='https://www.facebook.com/'>
+                                                <FacebookLogo />
+                                            </a>
+
+                                            <a 
+                                                href='https://www.twitter.com/' 
+                                                className='flex align-center'
+                                            >
+                                                <TwitterLogo />
+                                            </a>
+                                        </div>
+                                    </div>
                                 </ Dialog.Content>
                              </ Dialog.Portal>
                         </ Dialog.Root>}

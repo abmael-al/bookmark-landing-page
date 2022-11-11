@@ -6,17 +6,25 @@ import {
 } from '@radix-ui/react-navigation-menu';
 
 interface NavigationMenuProps {
-    navContainerClass?: string;
+    navRootClass?: string;
+    navListClass?: string;
+    navItemClass?: string;
     navLinkClass?: string;
 }
 
-export const NavigationMenu = ({ navContainerClass, navLinkClass }: NavigationMenuProps) => {
+export const NavigationMenu = ({ 
+    navRootClass, 
+    navListClass, 
+    navItemClass,
+    navLinkClass 
+}: NavigationMenuProps) => {
+    const itemClass = navItemClass ? navItemClass : '';
     const linkClass = navLinkClass ? navLinkClass : '';
     
     return (
-        <NavRoot>
-            <NavList className={ navContainerClass ? navContainerClass : '' }>
-                <NavItem>
+        <NavRoot className={ navRootClass ? navRootClass : '' }>
+            <NavList className={ navListClass ? navListClass : '' }>
+                <NavItem className={itemClass}>
                     <NavLink 
                         href='/' 
                         className={linkClass}  
@@ -25,7 +33,7 @@ export const NavigationMenu = ({ navContainerClass, navLinkClass }: NavigationMe
                     </ NavLink>
                 </ NavItem>
                 
-                <NavItem>
+                <NavItem className={itemClass}>
                     <NavLink 
                         href='/' 
                         className={linkClass}  
@@ -34,7 +42,7 @@ export const NavigationMenu = ({ navContainerClass, navLinkClass }: NavigationMe
                     </ NavLink>
                 </ NavItem>
                 
-                <NavItem>
+                <NavItem className={itemClass}>
                     <NavLink 
                         href='/' 
                         className={linkClass}  
