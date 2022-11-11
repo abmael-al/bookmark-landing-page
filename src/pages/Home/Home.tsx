@@ -1,4 +1,5 @@
 import { Hero } from "./Hero/Hero"
+import { GeneralContainer } from "../../components"
 
 const Footer = () => {
     return <h2>Footer</h2>
@@ -22,13 +23,13 @@ const Features = () => {
 
 export const Home = () => {
     return (
-        <div>
+        <GeneralContainer>
             <Hero />
             <Features />
             <CallToAction />
             <FrequentlyAskedQuestions />
             <EmailCapture />
             <Footer />
-        </div>
+        </GeneralContainer>
     )
 }
