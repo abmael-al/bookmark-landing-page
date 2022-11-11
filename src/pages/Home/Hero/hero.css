@@ -1,3 +1,4 @@
+/* HERO HEADER AND ITS CONTENT */
 .hero__header,
 .hero__header__wrapper,
 .hero__nav__list {
@@ -143,6 +144,47 @@
     border-block-start: var(--mobile-nav-link-border);   
 }
 
+/* HERO BODY */
+.hero__main {
+    display: grid;
+}
+
+.hero__body__text {
+    text-align: center;
+}
+
+.hero__body__action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-block-start: 1.5rem;
+}
+
+.hero__headline {
+    margin-block-end: 1rem;
+}
+
+.hero__illustration {
+    grid-row: 1 / 2;
+}
+
+@media (min-width: 48em) {
+    .hero__main {
+        grid-auto-flow: column;
+        grid-auto-columns: 40% 50%;
+    }
+
+    .hero__body__text {
+        text-align: start;
+    }
+
+    .hero__body__action {
+        justify-content: start;
+    }
+}
+
+/* ANIMATIONS */
 @keyframes contentShow {
     from {
         opacity: 0;

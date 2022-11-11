@@ -100,21 +100,23 @@ export const Hero = () => {
                 </div>
             </header>
 
-            <main>
-                <div>
-                    <h1>A Simple Bookmark Manager</h1>
-                    <p>
-                        A clean and simple interface to organize your favourite websites
-                        Open a new browser tab and see your sites load instantly.
-                        Try it for free.
-                    </p>
-                </div>
-                <div>
-                    <a href="/">Get it on Chrome</a>
-                    <a href="/">Get it on Firefox</a>
+            <main className='hero__main'>
+                <div className='hero__body'>
+                    <div className='hero__body__text'>
+                        <h1 className='hero__headline heading heading-300'>A Simple Bookmark Manager</h1>
+                        <p className='clr-neutral-300'>
+                            A clean and simple interface to organize your favourite websites
+                            Open a new browser tab and see your sites load instantly.
+                            Try it for free.
+                        </p>
+                    </div>
+                    <div className='hero__body__action'>
+                        <a href="/" className='button button--primary--blue button-padding-2'>Get it on Chrome</a>
+                        <a href="/" className='button button--secondary--gray button-padding-2'>Get it on Firefox</a>
+                    </div>
                 </div>
                 
-                <figure>
+                <figure className='hero__illustration'>
                     <img 
                         src="/images/illustration-hero.svg" 
                         alt="INSERT_ALT_TEXT_HERE"

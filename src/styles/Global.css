@@ -1,8 +1,10 @@
 :root {
     /* colors */
     --clr-neutral-900: hsl(0, 0%, 0%);
-    --clr-neutral-300: hsl(229, 31%, 21%);
-    --clr-neutral-200: hsl(229, 8%, 60%);
+    --clr-neutral-800: hsl(229, 31%, 15%);
+    --clr-neutral-700: hsl(229, 31%, 21%);
+    --clr-neutral-500: hsl(229, 8%, 60%);
+    --clr-neutral-200: hsl(0, 0%, 97%);
     --clr-neutral-100: hsl(0, 0%, 100%);
     
     --clr-accent-100: hsl(0, 94%, 66%);
@@ -20,12 +22,19 @@
 
     --fs-300: 1rem;
     --fs-400: 1.125rem;
+    --fs-900: 2rem;
 
     --tracking-100: 1.5px;
     --tracking-200: 2px;
 
     --ff-body: var(--ff-primary);
     --fs-body: var(--fs-300);
+
+    --ff-heading: var(--ff-primary);
+    --fw-heading: var(--fw-medium);
+    --clr-heading: var(--clr-neutral-800);
+
+    --fs-heading-300: var(--fs-900);
 }
 
 body {
@@ -42,10 +51,16 @@ body {
     padding-inline: 1.75em;
     border-radius: 0.3125rem;
     outline: 0;
-	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     
     font-size: var(--fs-300);
+    font-weight: var(--fw-medium);
     color: var(--clr-neutral-100);
+}
+
+.button-padding-2 {
+    padding-block: 0.75em;
+    padding-inline: 1.25em;
 }
 
 .button--primary--red {
@@ -59,14 +74,35 @@ body {
     background-color: transparent;
 }
 
+.button--primary--blue {
+    border: 2px solid var(--clr-accent-200);
+    background-color: var(--clr-accent-200);
+}
+
+.button--primary--blue:hover,
+.button--primary--blue:focus {
+    color: var(--clr-accent-200);
+    background-color: transparent;
+}
+
+.button--secondary--gray {
+    border: 2px solid var(--clr-neutral-200);
+    background-color: var(--clr-neutral-200);
+    color: var(--clr-neutral-700);
+}
+
+.button--secondary--gray:hover,
+.button--secondary--gray:focus {
+    border: 2px solid var(--clr-neutral-700);
+    background-color: transparent;
+}
+
 .button--terciary {
     display: block;
     block-size: max-content;
     border: 2px solid var(--clr-neutral-100);
-	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     
     font-size: var(--fs-400);
-    font-weight: var(--fw-medium);
     text-transform: uppercase;
     text-align: center;
     letter-spacing: var(--tracking-200);
@@ -74,9 +110,23 @@ body {
     background: transparent;
 }
 
+.clr-neutral-300 { color: var(--clr-neutral-500); }
+
 .uppercase { text-transform: uppercase; }
+.text-center { text-align: center; }
+
 .tracking-100 { letter-spacing: var(--tracking-100); }
 .fw-medium { font-weight: var(--fw-medium); }
+
+.heading {
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-heading);
+    color: var(--clr-heading);
+}
+
+.heading-300 {
+    font-size: var(--fs-heading-300);
+}
 
 .flex { display: flex; }
 .align-center { align-items: center; }
