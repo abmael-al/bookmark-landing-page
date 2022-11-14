@@ -1,4 +1,5 @@
 import { Hero } from "./Hero/Hero"
+import { Features } from "./Features/Features"
 import { GeneralContainer } from "../../components"
 
 const Footer = () => {
@@ -15,10 +16,6 @@ const FrequentlyAskedQuestions = () => {
 
 const CallToAction = () => {
     return <h2>Call to Action</h2>
-}
-
-const Features = () => {
-    return <h2>Features</h2>
 }
 
 export const Home = () => {
