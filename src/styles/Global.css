@@ -37,6 +37,24 @@
     --fs-heading-300: var(--fs-900);
 }
 
+@media (min-width: 36em) {
+    :root {
+        --fs-900: 2.25rem;
+    }
+}
+
+@media (min-width: 56em) {
+    :root {
+        --fs-900: 2.5rem;
+    }
+}
+
+@media (min-width: 64em) {
+    :root {
+        --fs-900: 3rem;
+    }
+}
+
 body {
     font-family: var(--ff-body);
     font-weight: var(--fw-regular);
@@ -55,10 +73,11 @@ body {
     
     font-size: var(--fs-300);
     font-weight: var(--fw-medium);
+    text-align: center;
     color: var(--clr-neutral-100);
 }
 
-.button-padding-2 {
+.button-thick {
     padding-block: 0.75em;
     padding-inline: 1.25em;
 }
@@ -104,17 +123,14 @@ body {
     
     font-size: var(--fs-400);
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: var(--tracking-200);
     
     background: transparent;
 }
 
 .clr-neutral-300 { color: var(--clr-neutral-500); }
-
 .uppercase { text-transform: uppercase; }
 .text-center { text-align: center; }
-
 .tracking-100 { letter-spacing: var(--tracking-100); }
 .fw-medium { font-weight: var(--fw-medium); }
 
@@ -129,4 +145,5 @@ body {
 }
 
 .flex { display: flex; }
+
 .align-center { align-items: center; }

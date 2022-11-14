@@ -12,7 +12,7 @@ import './hero.css'
 
 export const Hero = () => {
     const { width: viewport } = useWindowSize();
-    const BREAKPOINT = 768;
+    const BREAKPOINT = 800;
     const isMobileViewport = viewport < BREAKPOINT;
     const isDesktopViewport = viewport >= BREAKPOINT;
 
@@ -102,17 +102,17 @@ export const Hero = () => {
 
             <main className='hero__main'>
                 <div className='hero__body'>
-                    <div className='hero__body__text'>
+                    <div className='hero__body__copy'>
                         <h1 className='hero__headline heading heading-300'>A Simple Bookmark Manager</h1>
-                        <p className='clr-neutral-300'>
-                            A clean and simple interface to organize your favourite websites
+                        <p className='hero__body__text clr-neutral-300'>
+                            A clean and simple interface to organize your favourite websites.
                             Open a new browser tab and see your sites load instantly.
                             Try it for free.
                         </p>
                     </div>
                     <div className='hero__body__action'>
-                        <a href="/" className='button button--primary--blue button-padding-2'>Get it on Chrome</a>
-                        <a href="/" className='button button--secondary--gray button-padding-2'>Get it on Firefox</a>
+                        <a href="/" className='button button-thick button--primary--blue hero__action__button'>Get it on Chrome</a>
+                        <a href="/" className='button button-thick button--secondary--gray hero__action__button'>Get it on Firefox</a>
                     </div>
                 </div>
                 
