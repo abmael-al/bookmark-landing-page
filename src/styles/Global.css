@@ -22,6 +22,7 @@
 
     --fs-300: 1rem;
     --fs-400: 1.125rem;
+    --fs-800: 1.5rem;
     --fs-900: 2rem;
 
     --tracking-100: 1.5px;
@@ -34,11 +35,13 @@
     --fw-heading: var(--fw-medium);
     --clr-heading: var(--clr-neutral-800);
 
+    --fs-heading-200: var(--fs-800);
     --fs-heading-300: var(--fs-900);
 }
 
 @media (min-width: 36em) {
     :root {
+        --fs-800: 2rem;
         --fs-900: 2.25rem;
     }
 }
@@ -79,7 +82,7 @@ body {
 
 .button-thick {
     padding-block: 0.75em;
-    padding-inline: 1.25em;
+    padding-inline: 1.5em;
 }
 
 .button--primary--red {
@@ -133,15 +136,21 @@ body {
 .text-center { text-align: center; }
 .tracking-100 { letter-spacing: var(--tracking-100); }
 .fw-medium { font-weight: var(--fw-medium); }
+.line-h-1 { line-height: 1; }
 
 .heading {
     font-family: var(--ff-heading);
     font-weight: var(--fw-heading);
+    line-height: 1.1; 
     color: var(--clr-heading);
 }
 
 .heading-300 {
     font-size: var(--fs-heading-300);
+}
+
+.heading-200 {
+    font-size: var(--fs-heading-200);
 }
 
 .flex { display: flex; }
