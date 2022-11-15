@@ -12,7 +12,7 @@ import './hero.css'
 
 export const Hero = () => {
     const { width: viewport } = useWindowSize();
-    const BREAKPOINT = 800;
+    const BREAKPOINT = 832;
     const isMobileViewport = viewport < BREAKPOINT;
     const isDesktopViewport = viewport >= BREAKPOINT;
 
