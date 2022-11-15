@@ -1,5 +1,6 @@
 import { Hero } from "./Hero/Hero"
 import { Features } from "./Features/Features"
+import { CallToAction } from "./CallToAction/CallToAction"
 import { GeneralContainer } from "../../components"
 
 const Footer = () => {
@@ -12,10 +13,6 @@ const EmailCapture = () => {
 
 const FrequentlyAskedQuestions = () => {
     return <h2>FAQ</h2>
-}
-
-const CallToAction = () => {
-    return <h2>Call to Action</h2>
 }
 
 export const Home = () => {

@@ -1,18 +1,18 @@
 .features {
-    margin-block: 4rem;
+    padding-block: 4rem;
 }
 
 .features__body {
-    text-align: center;
     margin-block-end: 3rem;
+    text-align: center;
 }
 
 .features__body__text {
-    font-size: var(--fs-400);
-    color: var(--clr-neutral-500);
     max-inline-size: 48ch;
     margin-inline: auto;
     margin-block-start: 1.5rem;
+    font-size: var(--fs-400);
+    color: var(--clr-neutral-500);
 }
 
 .tabs__list {

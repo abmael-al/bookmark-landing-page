@@ -22,6 +22,7 @@
 
     --fs-300: 1rem;
     --fs-400: 1.125rem;
+    --fs-500: 1.25rem;
     --fs-800: 1.5rem;
     --fs-900: 2rem;
 
@@ -35,6 +36,7 @@
     --fw-heading: var(--fw-medium);
     --clr-heading: var(--clr-neutral-800);
 
+    --fs-heading-100: var(--fs-500);
     --fs-heading-200: var(--fs-800);
     --fs-heading-300: var(--fs-900);
 }
@@ -145,12 +147,16 @@ body {
     color: var(--clr-heading);
 }
 
-.heading-300 {
-    font-size: var(--fs-heading-300);
+.heading-100 {
+    font-size: var(--fs-heading-100);
 }
 
 .heading-200 {
     font-size: var(--fs-heading-200);
+}
+
+.heading-300 {
+    font-size: var(--fs-heading-300);
 }
 
 .flex { display: flex; }
