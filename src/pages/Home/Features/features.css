@@ -1,3 +1,20 @@
+.features {
+    margin-block: 4rem;
+}
+
+.features__body {
+    text-align: center;
+    margin-block-end: 3rem;
+}
+
+.features__body__text {
+    font-size: var(--fs-400);
+    color: var(--clr-neutral-500);
+    max-inline-size: 48ch;
+    margin-inline: auto;
+    margin-block-start: 1.5rem;
+}
+
 .tabs__list {
     display: flex;
     flex-direction: column;
@@ -33,7 +50,7 @@
 .tabs__content[data-state='active'] {
     display: grid;
     gap: 3rem;
-    padding-block: 4rem;
+    padding-block-start: 4rem;
 }
 
 .tabs__content__body {
@@ -71,9 +88,9 @@
     }
 
     .tabs__content[data-state='active'] {
-        gap: 1rem;
         grid-auto-flow: column;
         grid-template-columns: 50% 50%;
+        gap: 1rem;
     }
 
     .tabs__content__body {
