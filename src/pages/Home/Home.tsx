@@ -2,7 +2,6 @@ import { Hero } from "./Hero/Hero"
 import { Features } from "./Features/Features"
 import { CallToAction } from "./CallToAction/CallToAction"
 import { EmailCapture } from "./EmailCapture/EmailCapture"
-import { GeneralContainer } from "../../components"
 
 const Footer = () => {
     return <h2>Footer</h2>
@@ -14,13 +13,13 @@ const FrequentlyAskedQuestions = () => {
 
 export const Home = () => {
     return (
-        <GeneralContainer>
+        <>
             <Hero />
             <Features />
             <CallToAction />
             <FrequentlyAskedQuestions />
             <EmailCapture />
             <Footer />
-        </GeneralContainer>
+        </>
     )
 }

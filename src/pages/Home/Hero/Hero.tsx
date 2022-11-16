@@ -1,4 +1,5 @@
 import { NavigationMenu } from '../../../components';
+import { GeneralContainer } from '../../../components';
 import * as Dialog from '@radix-ui/react-dialog'
 import { ReactComponent as BookmarkLogo } from '../../../assets/logos/bookmark-logo.svg';
 import { ReactComponent as FacebookLogo } from '../../../assets/logos/facebook-logo.svg';
@@ -16,7 +17,7 @@ export const Hero = () => {
     const isMobileViewport = viewport < BREAKPOINT;
     const isDesktopViewport = viewport >= BREAKPOINT;
 
-    return <div> 
+    return <GeneralContainer> 
             <header className='hero__header'>
                 <a 
                     href="/"
@@ -123,5 +124,5 @@ export const Hero = () => {
                     />
                 </figure>
             </main>
-        </div>
+        </GeneralContainer>
 }
