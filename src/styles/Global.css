@@ -20,14 +20,19 @@
     --fw-regular: 400;
     --fw-medium: 500;
 
+    --fs-100: 0.75rem;
+    --fs-200: 0.8125rem;
     --fs-300: 1rem;
     --fs-400: 1.125rem;
     --fs-500: 1.25rem;
-    --fs-800: 1.5rem;
+    --fs-800: 1.75rem;
     --fs-900: 2rem;
 
     --tracking-100: 1.5px;
     --tracking-200: 2px;
+    --tracking-300: 5px;
+
+    --leading-300: 1.25;
 
     --ff-body: var(--ff-primary);
     --fs-body: var(--fs-300);
