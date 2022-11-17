@@ -15,7 +15,7 @@ const AccordionItemBody = ({ question, answer }: AccordionItemBodyProps) => {
             <Accordion.Header>
                 <Accordion.Trigger className="accordion__trigger">
                     <p>{question}</p>
-                    <ArrowIcon />
+                    <ArrowIcon className="accordion__trigger__icon" />
                 </ Accordion.Trigger>
             </ Accordion.Header>
             <Accordion.Content className="accordion__content">
@@ -27,9 +27,9 @@ const AccordionItemBody = ({ question, answer }: AccordionItemBodyProps) => {
 
 export const FrequentlyAskedQuestions = () => {
     return (
-        <section>
+        <section className="faq">
             <GeneralContainer>
-                <div>
+                <div className="faq__body">
                     <h2 className="heading heading-200">Frequently Asked Questions</h2>
                     <p className="faq__body__text">
                         Here are some of our FAQs. If you have any other 
@@ -73,7 +73,7 @@ export const FrequentlyAskedQuestions = () => {
                     </ Accordion.Item>
                 </ Accordion.Root>
 
-                <a className="button button-thick button--primary--blue" href="/">More Info</a>
+                <a className="faq__action button button-thick button--primary--blue" href="/">More Info</a>
             </GeneralContainer>
         </section>
     )
