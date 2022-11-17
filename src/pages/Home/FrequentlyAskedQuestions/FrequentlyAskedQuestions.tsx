@@ -9,7 +9,7 @@ interface AccordionItemBodyProps {
     answer: string;
 }
 
-const AccordionItemBody = ({ question, answer }: AccordionItemBodyProps) => {
+const AccordionItemTriggerAndContent = ({ question, answer }: AccordionItemBodyProps) => {
     return (
         <>
             <Accordion.Header>
@@ -40,7 +40,7 @@ export const FrequentlyAskedQuestions = () => {
 
                 <Accordion.Root className="accordion__root" type="single" defaultValue="item-1" collapsible>
                     <Accordion.Item className="accordion__item" value="item-1">
-                        <AccordionItemBody 
+                        <AccordionItemTriggerAndContent 
                             question="What is Bookmark?"
                             answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                             Asperiores, sed assumenda accusantium dolores deserunt sapiente optio praesentium repellat, 
@@ -48,7 +48,7 @@ export const FrequentlyAskedQuestions = () => {
                         />
                     </ Accordion.Item>
                     <Accordion.Item className="accordion__item" value="item-2">
-                        <AccordionItemBody 
+                        <AccordionItemTriggerAndContent 
                             question="How can i request a new browser?"
                             answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                             Asperiores, sed assumenda accusantium dolores deserunt sapiente optio praesentium repellat, 
@@ -56,7 +56,7 @@ export const FrequentlyAskedQuestions = () => {
                         />
                     </ Accordion.Item>
                     <Accordion.Item className="accordion__item" value="item-3">
-                        <AccordionItemBody 
+                        <AccordionItemTriggerAndContent 
                             question="Is there a mobile app?"
                             answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                             Asperiores, sed assumenda accusantium dolores deserunt sapiente optio praesentium repellat, 
@@ -64,7 +64,7 @@ export const FrequentlyAskedQuestions = () => {
                         />
                     </ Accordion.Item>
                     <Accordion.Item className="accordion__item" value="item-4">
-                        <AccordionItemBody 
+                        <AccordionItemTriggerAndContent 
                             question="What about other Chromium browsers?"
                             answer="Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                             Asperiores, sed assumenda accusantium dolores deserunt sapiente optio praesentium repellat, 
