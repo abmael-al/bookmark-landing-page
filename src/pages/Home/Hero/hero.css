@@ -1,4 +1,8 @@
 /* HERO HEADER AND ITS CONTENT */
+.hero {
+    overflow-x: hidden;
+}
+
 .hero__header,
 .hero__header__wrapper,
 .hero__nav__list {
@@ -186,10 +190,27 @@
     --hero-lllustration-width: min(600px, 100%);
 
     grid-row: 1 / 2;
+
+    position: relative;
+
     display: flex;
     justify-content: center;
-    margin-inline: auto;
     inline-size: var(--hero-lllustration-width);
+    margin-inline: auto;
+}
+
+.hero__illustration::before {
+    content: '';
+
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 100%;
+    height: 75%;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    background-color: var(--clr-accent-200);
+    z-index: -1;
 }
 
 @media (min-width: 58em) {
