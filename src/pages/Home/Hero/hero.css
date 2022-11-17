@@ -102,10 +102,15 @@
     margin-block-start: var(--white-space);
 }
 
-.dialog__social__links {
+.dialog__socials__wrapper {
     display: flex;
     justify-content: center;
     gap: 2.5rem;
+}
+
+.dialog__social__link {
+    --social-logo-clr: var(--clr-neutral-100);
+    color: var(--social-logo-clr);
 }
 
 .mobile__nav__list {

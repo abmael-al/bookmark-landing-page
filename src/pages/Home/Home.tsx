@@ -3,10 +3,7 @@ import { Features } from "./Features/Features"
 import { CallToAction } from "./CallToAction/CallToAction"
 import { EmailCapture } from "./EmailCapture/EmailCapture"
 import { FrequentlyAskedQuestions } from "./FrequentlyAskedQuestions/FrequentlyAskedQuestions"
-
-const Footer = () => {
-    return <h2>Footer</h2>
-}
+import { Footer } from "./Footer/Footer"
 
 export const Home = () => {
     return (

@@ -82,14 +82,17 @@ export const Hero = () => {
                                             Login
                                         </a>
 
-                                        <div className='dialog__social__links'>
-                                            <a href='https://www.facebook.com/'>
+                                        <div className='dialog__socials__wrapper'>
+                                            <a 
+                                                href='https://www.facebook.com/'
+                                                className="dialog__social__link"
+                                            >
                                                 <FacebookLogo />
                                             </a>
 
                                             <a 
                                                 href='https://www.twitter.com/' 
-                                                className='flex align-center'
+                                                className='dialog__social__link flex align-center'
                                             >
                                                 <TwitterLogo />
                                             </a>
