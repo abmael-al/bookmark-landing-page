@@ -183,15 +183,19 @@
 }
 
 .hero__illustration {
+    --hero-lllustration-width: min(600px, 100%);
+
+    grid-row: 1 / 2;
     display: flex;
     justify-content: center;
-    grid-row: 1 / 2;
+    margin-inline: auto;
+    inline-size: var(--hero-lllustration-width);
 }
 
-@media (min-width: 52em) {
+@media (min-width: 58em) {
     .hero__main {
         grid-auto-flow: column;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 45% 55%;
         gap: 1rem;
     }
 
