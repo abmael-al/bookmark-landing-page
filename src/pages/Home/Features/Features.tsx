@@ -29,7 +29,8 @@ export const Features = () => {
                     </ Tabs.List>
                     <Tabs.Content className="tabs__content" value="tab1">
                         <figure className='tabs__content__illustration'>
-                            <img 
+                            <img
+                                className="tabs__content__img" 
                                 src="/images/illustration-features-tab-1.svg"
                                 alt="" 
                                 loading="lazy"
@@ -49,7 +50,8 @@ export const Features = () => {
                     </ Tabs.Content>
                     <Tabs.Content className="tabs__content" value="tab2">
                         <figure className='tabs__content__illustration'>
-                            <img 
+                            <img
+                                className="tabs__content__img"
                                 src="/images/illustration-features-tab-2.svg"
                                 alt="" 
                                 loading="lazy"
@@ -69,7 +71,8 @@ export const Features = () => {
                     </ Tabs.Content>
                     <Tabs.Content className="tabs__content" value="tab3">
                         <figure className='tabs__content__illustration'>
-                            <img 
+                            <img
+                                className="tabs__content__img" 
                                 src="/images/illustration-features-tab-3.svg"
                                 alt="" 
                                 loading="lazy"
