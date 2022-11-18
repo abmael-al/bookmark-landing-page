@@ -5,6 +5,7 @@
 
 .footer__container {
     display: grid;
+    align-items: center;
     justify-content: center;
 }
 
@@ -35,6 +36,11 @@
     color: var(--clr-accent-100);
 }
 
+.footer__home__link {
+    display: flex;
+    align-items: center;
+}
+
 .footer__home__link:hover,
 .footer__home__link:focus {
     outline: 0;
@@ -49,6 +55,8 @@
 .footer__social__link {
     --social-logo-clr: var(--clr-neutral-100);
     
+    display: flex;
+    align-items: center;
     color: var(--social-logo-clr);
 }
 
@@ -63,14 +71,17 @@
     fill: var(--clr-neutral-100);
 }
 
+.footer__layout__wrapper {
+    display: flex;
+    align-items: center;
+}
+
 @media (min-width: 38em) {
     .footer__container {
         gap: 3rem;
     }
 
     .footer__layout__wrapper {
-        display: flex;
-        align-items: center;
         gap: 4rem;
     }
 

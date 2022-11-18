@@ -33,7 +33,7 @@ export const Footer = () => {
 
                     <a 
                         href='https://www.twitter.com/' 
-                        className="footer__social__link flex align-center"
+                        className="footer__social__link"
                     >
                         <TwitterLogo />
                     </a>                
