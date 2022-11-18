@@ -187,19 +187,16 @@
 }
 
 .hero__illustration {
-    --hero-lllustration-width: min(600px, 100%);
-
-    grid-row: 1 / 2;
-
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    inline-size: var(--hero-lllustration-width);
+    max-inline-size: 600px;
     margin-inline: auto;
 }
 
-.hero__illustration::before {
+.hero__illustration__wrapper {
+    grid-row: 1 / 2;
+    position: relative;
+}
+
+.hero__illustration__wrapper::before {
     content: '';
 
     position: absolute;

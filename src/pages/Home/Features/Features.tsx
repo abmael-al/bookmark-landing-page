@@ -4,8 +4,8 @@ import './features.css';
 
 export const Features = () => {
     return (
-        <GeneralContainer>
-            <section className='features'>
+        <section className='features'>
+            <GeneralContainer>
                 <div className='features__body'>
                     <h2 className='heading heading-200'>Features</h2>
                     <p className='features__body__text'>
@@ -28,14 +28,16 @@ export const Features = () => {
                         </ Tabs.Trigger>
                     </ Tabs.List>
                     <Tabs.Content className="tabs__content" value="tab1">
-                        <figure className='tabs__content__illustration'>
+                        <div className="tabs__content__illustration__wrapper">
                             <img
-                                className="tabs__content__img" 
+                                className="tabs__content__illustration" 
                                 src="/images/illustration-features-tab-1.svg"
+                                width="536" 
+                                height="346"
                                 alt="" 
                                 loading="lazy"
                             />
-                        </figure>
+                        </div>
                         <div className="tabs__content__body">
                             <div>
                                 <h2 className="heading heading-200 line-h-1">Bookmark in one click</h2>
@@ -49,14 +51,16 @@ export const Features = () => {
                         </div>
                     </ Tabs.Content>
                     <Tabs.Content className="tabs__content" value="tab2">
-                        <figure className='tabs__content__illustration'>
+                        <div className="tabs__content__illustration__wrapper">
                             <img
-                                className="tabs__content__img"
+                                className="tabs__content__illustration"
                                 src="/images/illustration-features-tab-2.svg"
+                                width="478" 
+                                height="416"
                                 alt="" 
                                 loading="lazy"
                             />
-                        </figure>
+                        </div>
                         <div className="tabs__content__body">
                             <div>
                                 <h2 className="heading heading-200 line-h-1">Intelligent search</h2>
@@ -70,14 +74,16 @@ export const Features = () => {
                         </div>                
                     </ Tabs.Content>
                     <Tabs.Content className="tabs__content" value="tab3">
-                        <figure className='tabs__content__illustration'>
+                        <div className="tabs__content__illustration__wrapper">
                             <img
-                                className="tabs__content__img" 
+                                className="tabs__content__illustration" 
                                 src="/images/illustration-features-tab-3.svg"
+                                width="440" 
+                                height="380"
                                 alt="" 
                                 loading="lazy"
                             />
-                        </figure>
+                        </div>
                         <div className="tabs__content__body">
                             <div>
                                 <h2 className="heading heading-200 line-h-1">Share your bookmarks</h2>
@@ -91,7 +97,7 @@ export const Features = () => {
                         </div>                  
                     </ Tabs.Content>
                 </ Tabs.Root>
-            </section>
-        </GeneralContainer>
+            </GeneralContainer>
+        </section>
     )
 }

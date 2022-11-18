@@ -122,12 +122,16 @@ export const Hero = () => {
                         </div>
                     </div>
                     
-                    <figure className='hero__illustration'>
+                    <div className='hero__illustration__wrapper'>
                         <img 
-                            src="/images/illustration-hero.svg" 
+                            className='hero__illustration'
+                            src="/images/illustration-hero.svg"
+                            width="657"
+                            height="466"
                             alt="INSERT_ALT_TEXT_HERE"
                         />
-                    </figure>
+
+                    </div>
                 </main>
             </GeneralContainer>
         </section>

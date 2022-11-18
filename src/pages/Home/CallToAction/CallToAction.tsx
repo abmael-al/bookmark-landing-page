@@ -1,4 +1,7 @@
 import { GeneralContainer } from "../../../components";
+import { ReactComponent as ChromeLogo } from "../../../assets/logos/chrome-logo.svg";
+import { ReactComponent as FirefoxLogo } from "../../../assets/logos/firefox-logo.svg";
+import { ReactComponent as OperaLogo } from "../../../assets/logos/opera-logo.svg";
 import "./callToAction.css";
 
 export const CallToAction = () => {
@@ -16,11 +19,9 @@ export const CallToAction = () => {
                 <div className="cta__cards__container">
                     <div className="cta__card left-top">
                         <div className="cta__card__wrapper">
-                            <img 
-                                className="cta__card__logo"
-                                src="/logos/chrome-logo.svg" 
-                                alt="Chrome logo" 
-                            />
+                            <div>
+                                <ChromeLogo />
+                            </div>
                             <div>
                                 <h3 className="cta__card__heading heading heading-100">Add to Chrome</h3>
                                 <p className="clr-neutral-300">Minimum version 62</p>
@@ -32,11 +33,9 @@ export const CallToAction = () => {
                     </div>
                     <div className="cta__card center-center">
                         <div className="cta__card__wrapper">
-                            <img 
-                                className="cta__card__logo"
-                                src="/logos/firefox-logo.svg" 
-                                alt="Chrome logo" 
-                            />
+                            <div>
+                                <FirefoxLogo />
+                            </div>
                             <div>
                                 <h3 className="cta__card__heading heading heading-100">Add to Firefox</h3>
                                 <p className="clr-neutral-300">Minimum version 55</p>
@@ -48,11 +47,9 @@ export const CallToAction = () => {
                     </div>
                     <div className="cta__card right-bottom">
                         <div className="cta__card__wrapper">
-                            <img 
-                                className="cta__card__logo"
-                                src="/logos/opera-logo.svg" 
-                                alt="Chrome logo" 
-                            />
+                            <div>
+                                <OperaLogo />
+                            </div>
                             <div>
                                 <h3 className="cta__card__heading heading heading-100">Add to Opera</h3>
                                 <p className="clr-neutral-300">Minimum version 46</p>

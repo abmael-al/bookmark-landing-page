@@ -11,9 +11,10 @@
 }
 
 /* Improve media defaults */
-img, picture, video, canvas, svg {
+img, picture, video, canvas {
     display: block;
-    max-width: 100%;
+    inline-size: 100%;
+    block-size: auto;
 }
 
 /* Make forms elements easier to work with */

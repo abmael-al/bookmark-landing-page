@@ -55,6 +55,7 @@
 .cta__card__wrapper {
     display: grid;
     justify-content: center;
+    gap: 1.5rem;
     padding-inline: 3.5rem;
     padding-block-start: 3.5rem;
     padding-block-end: 2rem;
