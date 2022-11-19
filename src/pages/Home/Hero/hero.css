@@ -35,6 +35,10 @@
     color: var(--clr-accent-100);
 }
 
+.hero__home__link {
+    display: flex;
+}
+
 .hero__home__link:focus {
     outline: 2px solid var(--clr-neutral-900);
     border-radius: 0.25rem;
