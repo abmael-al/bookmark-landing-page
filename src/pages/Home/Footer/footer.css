@@ -71,17 +71,14 @@
     fill: var(--clr-neutral-100);
 }
 
-.footer__layout__wrapper {
-    display: flex;
-    align-items: center;
-}
-
 @media (min-width: 38em) {
     .footer__container {
         gap: 3rem;
     }
 
     .footer__layout__wrapper {
+        display: flex;
+        align-items: center;
         gap: 4rem;
     }
 
