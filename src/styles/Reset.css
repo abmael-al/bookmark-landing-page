@@ -1,67 +1,77 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin and padding */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Improve media defaults */
-img, picture, video, canvas {
-    display: block;
-    inline-size: 100%;
-    block-size: auto;
+img,
+picture,
+video,
+canvas {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
 }
 
 /* Make forms elements easier to work with */
 input,
 button,
-textarea, 
+textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /* Remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Allow percentage-based heights in the application */
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 /* Add accessible line-height and improve text rendering */
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
 
 /* Default styles */
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }

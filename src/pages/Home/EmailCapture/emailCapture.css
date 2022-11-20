@@ -1,122 +1,122 @@
 .email__capture {
-    padding-block: 4rem;
-    background-color: var(--clr-accent-200);
+  padding-block: 4rem;
+  background-color: var(--clr-accent-200);
 }
 
 .email__capture__body {
-    text-align: center;
+  text-align: center;
 }
 
 .email__capture__headline:is(.heading) {
-    max-inline-size: 20ch;
-    margin-inline: auto;
-    margin-block: 2rem;
-    line-height: var(--leading-300);
-    color: var(--clr-neutral-100);
+  max-inline-size: 20ch;
+  margin-inline: auto;
+  margin-block: 2rem;
+  line-height: var(--leading-300);
+  color: var(--clr-neutral-100);
 }
 
 .email__capture__text {
-    font-size: var(--fs-200);
-    letter-spacing: var(--tracking-300);
-    color: var(--clr-neutral-100);
+  font-size: var(--fs-200);
+  letter-spacing: var(--tracking-300);
+  color: var(--clr-neutral-100);
 }
 
 .form {
-    display: grid;
-    gap: 1.25rem;
-    inline-size: min(23rem, 100%);
-    margin-inline: auto;
+  display: grid;
+  gap: 1.25rem;
+  inline-size: min(23rem, 100%);
+  margin-inline: auto;
 }
 
 .form__submit {
-    font-weight: var(--fw-medium);
+  font-weight: var(--fw-medium);
 }
 
 .form__submit:is(.button):hover,
 .form__submit:is(.button):focus {
-    background-color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-100);
 }
 
 .form__fieldset {
-    border: none;
-    block-size: max-content;
+  border: none;
+  block-size: max-content;
 }
 
 .form__fieldset--error {
-    --border-top-radius: 0.25rem;
-    --border-bottom-radius: 0.375rem;
+  --border-top-radius: 0.25rem;
+  --border-bottom-radius: 0.375rem;
 
-    border-top-right-radius: var(--border-top-radius);
-    border-top-left-radius: var(--border-top-radius);
-    border-bottom-right-radius: var(--border-bottom-radius);
-    border-bottom-left-radius: var(--border-bottom-radius);
-    padding: 0.125rem;
-    background-color: var(--clr-accent-100);
+  border-top-right-radius: var(--border-top-radius);
+  border-top-left-radius: var(--border-top-radius);
+  border-bottom-right-radius: var(--border-bottom-radius);
+  border-bottom-left-radius: var(--border-bottom-radius);
+  padding: 0.125rem;
+  background-color: var(--clr-accent-100);
 }
 
 @media (min-width: 52em) {
-    .email__capture {
-        padding-block-start: 4rem;
-        padding-block-end: 2.21875rem;
-    }
+  .email__capture {
+    padding-block-start: 4rem;
+    padding-block-end: 2.21875rem;
+  }
 
-    .form {
-        grid-auto-flow: column;
-        grid-template-rows: 5rem;
-        grid-template-columns: 23rem max-content;
-        justify-content: center;
-        gap: 1.25rem;
-        inline-size: auto;
-    }
+  .form {
+    grid-auto-flow: column;
+    grid-template-rows: 5rem;
+    grid-template-columns: 23rem max-content;
+    justify-content: center;
+    gap: 1.25rem;
+    inline-size: auto;
+  }
 
-    .form__submit {
-        block-size: max-content;
-    }
+  .form__submit {
+    block-size: max-content;
+  }
 }
 
 .form__input__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    padding-inline-start: 1.5rem;
-    padding-inline-end: 1.25rem;
-    padding-block: 0.86rem;
-    
-    border-radius: 0.25rem;
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    background-color: var(--clr-neutral-100);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 1.25rem;
+  padding-block: 0.86rem;
+
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  background-color: var(--clr-neutral-100);
 }
 
 .form__input {
-    --placeholder-color: var(--clr-neutral-500);
-    inline-size: 90%;
-    border: none;
+  --placeholder-color: var(--clr-neutral-500);
+  inline-size: 90%;
+  border: none;
 }
 
 .form__input:hover,
 .form__input:focus {
-    outline: 0;
+  outline: 0;
 }
 
 .form__input::placeholder {
-    color: var(--placeholder-color);
-    opacity: 1;
+  color: var(--placeholder-color);
+  opacity: 1;
 }
-  
+
 .form__input:-ms-input-placeholder {
-    color: var(--placeholder-color);
+  color: var(--placeholder-color);
 }
-  
+
 .form__input::-ms-input-placeholder {
-    color: var(--placeholder-color);
+  color: var(--placeholder-color);
 }
 
 .form__error__message {
-    padding-inline: 0.75rem;
-    padding-block-start: 0.3rem;
-    padding-block-end: 0.175rem;
-    font-size: var(--fs-100);
-    color: var(--clr-neutral-100);
-    background-color: transparent;
+  padding-inline: 0.75rem;
+  padding-block-start: 0.3rem;
+  padding-block-end: 0.175rem;
+  font-size: var(--fs-100);
+  color: var(--clr-neutral-100);
+  background-color: transparent;
 }
