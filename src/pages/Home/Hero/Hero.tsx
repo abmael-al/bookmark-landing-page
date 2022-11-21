@@ -136,7 +136,7 @@ export const Hero = () => {
               src='/images/illustration-hero.svg'
               width='657'
               height='466'
-              alt='INSERT_ALT_TEXT_HERE'
+              alt={`An abstract illustration of the app's interface.`}
             />
           </div>
         </main>

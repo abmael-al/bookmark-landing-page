@@ -104,7 +104,7 @@
 }
 
 .tabs__content__illustration {
-  max-inline-size: 215px;
+  max-inline-size: 13.4375rem;
   margin-inline: auto;
 }
 
@@ -165,7 +165,7 @@
   }
 
   .tabs__content__illustration {
-    max-inline-size: 525px;
+    max-inline-size: 32.8125rem;
     margin-inline: 0;
   }
 }

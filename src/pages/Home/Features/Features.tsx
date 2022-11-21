@@ -34,7 +34,7 @@ export const Features = () => {
                 src='/images/illustration-features-tab-1.svg'
                 width='536'
                 height='346'
-                alt=''
+                alt={`An abstract illustration of the app's interface.`}
                 loading='lazy'
               />
             </div>
@@ -64,7 +64,7 @@ export const Features = () => {
                 src='/images/illustration-features-tab-2.svg'
                 width='478'
                 height='416'
-                alt=''
+                alt={`An abstract illustration of the app's search functionality.`}
                 loading='lazy'
               />
             </div>
@@ -94,7 +94,7 @@ export const Features = () => {
                 src='/images/illustration-features-tab-3.svg'
                 width='440'
                 height='380'
-                alt=''
+                alt={`An abstract illustration of the app's functionality of sharing of bookmarks and collections.`}
                 loading='lazy'
               />
             </div>
